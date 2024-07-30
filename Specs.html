@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Specifications - Garmin " />
+    <meta
+      name="description"
+      content="Dive into the technical details of Garmin products. Explore specifications, features, and functionalities. Choose devices that align with your needs."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fade in animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- prefetch images -->
+    <link rel="prefetch" href="./images/color-choices/venu-3-black-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-black-cf-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-frenchgray-cf-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-ivory-cf-lg.jpg"
+    />
+    <link rel="prefetch" href="./images/color-choices/venu-3s-pink-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-sagegray-cf-lg.jpg"
+    />
+    <link rel="prefetch" href="./images/watch-angles/venu-3-black-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-01-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-02-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-03-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-04-lg.jpg"
+    />
+
+    <title>Venu 3 Specifications | Garmin</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MR8512556E");
+  </script>
+  <!-- styling  -->
+  <style>
+    hr.line {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      margin: 3.75vw 0px;
+      width: 100%;
+    }
+
+    p,
+    li,
+    td {
+      color: #686868;
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: Roboto;
+      /* font-size: 1.25vw; */
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    h1 {
+      color: #000;
+      font-family: Oswald;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+      /* font-size: 3.906vw; */
+      font-weight: 500;
+    }
+
+    th {
+      color: #000;
+      font-family: Oswald;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 30%;
+    }
+
+    td {
+      vertical-align: top;
+    }
+
+    .responsive-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      float: left;
+    }
+
+    .responsive-image-left {
+      width: 40%;
+    }
+
+    .responsive-image-right {
+      width: 40%;
+    }
+
+    .responsive-image-right img.banner-pc {
+      width: 80%;
+    }
+
+    .responsive-image-right img.banner-mobile {
+      display: none;
+    }
+
+    .responsive-text {
+      width: 20%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .responsive-table tr {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .responsive-table td,
+      .responsive-table li {
+        width: 100%;
+        /* font-size: 3vw; */
+      }
+
+      .responsive-table th {
+        padding-bottom: 3vw;
+        /* font-size: 5vw; */
+        width: 100%;
+      }
+
+      .responsive-image-left {
+        display: none;
+      }
+
+      .responsive-text,
+      .responsive-image-right {
+        width: 100%;
+      }
+
+      .responsive-image-right img.banner-pc {
+        display: none;
+      }
+
+      .responsive-image-right img.banner-mobile {
+        display: flex;
+        width: 100%;
+      }
+
+      .responsive-text h1 {
+        /* font-size: 8vw; */
+        padding-bottom: 5vm;
+      }
+    }
+
+    /* For mobile version */
+    @media only screen and (max-width: 768px) {
+      #specs-desktop {
+        display: none;
+      }
+      #specs-mobile {
+        display: block;
+        overflow-x: clip;
+      }
+    }
+
+    /* for Desktop version  */
+    @media only screen and (min-width: 768px) {
+      #specs-desktop {
+        display: block;
+      }
+
+      #specs-mobile {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <!-- Nav bar (Header div) -->
+    <!-- testing navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="margin-right: 0">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px" />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="flex-grow: 0"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="./svg/search.svg"
+              alt="search"
+              width="23px"
+              style="margin: 0px 5px"
+          /></a>
+          <a href="cart.html"
+            ><img
+              src="./svg/Cart.svg"
+              alt="cart"
+              width="25px"
+              style="margin: 0px 5px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+   <!-- Promotion stuff banner -->
+
+   <div class="promotion-banner">
+    <div class="m-scroll">
+      <div class="primary">
+        <span>
+          <p style="display: inline;">
+            <img src="images/run.webp" alt="run" height="22px">
+            CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+            <img src="images/run.webp" alt="run" height="22px">
+            ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+            DELIVERY FOR EVERY ORDER 
+            <img src="images/run.webp" alt="run" height="22px">
+            SAVE AN EXTRA 20% ON YOUR PURCHASE
+            OF 2 ITEMS OR MORE 
+          </p>
+        </span>
+      </div>
+      <div class="secondary">
+        <span>
+          <p style="display: inline;">
+            <img src="images/run.webp" alt="run" height="22px">
+            CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+            <img src="images/run.webp" alt="run" height="22px">
+            ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+            DELIVERY FOR EVERY ORDER 
+            <img src="images/run.webp" alt="run" height="22px">
+            SAVE AN EXTRA 20% ON YOUR PURCHASE
+            OF 2 ITEMS OR MORE 
+          </p>
+        </span>
+      </div>
+    </div>
+  </div>
+    <!-- Second nav bar  Venu 3 desktop version -->
+    <div
+      class="container-2nd-navbar"
+      style="position: sticky; top: 0; z-index: 2; opacity: 1"
+      id="specs-desktop"
+    >
+      <div class="row d-flex justify-content-between">
+        <div class="col-10">
+          <div class="d-flex">
+            <div>
+              <h3 class="second-navbar-h3-font">VENU 3</h3>
+            </div>
+            <div>
+              <ul class="nav second-navbar-overview" style="margin-top: 10px">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="overview.html"
+                    >OVERVIEW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="Specs.html"
+                    style="margin-left: -20px"
+                    >SPECS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="compare.html"
+                    style="margin-left: -20px"
+                    >COMPARE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-end">
+          <a href="purchase.html">
+            <button class="buy-now-button">BUY NOW</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Second nav bar  Venu 3 mobile version -->
+    <div
+      class="container-2nd-navbar"
+      style="position: sticky; top: 0; opacity: 1; z-index: 2"
+      id="specs-mobile"
+    >
+      <div class="row">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-3">
+              <h3
+                class="second-navbar-h3-font"
+                style="
+                  font-size: 17px;
+                  padding-left: 10px;
+                  padding-top: 18px;
+                  padding-bottom: 0px;
+                "
+              >
+                VENU 3
+              </h3>
+            </div>
+            <div class="col-9">
+              <ul
+                class="nav second-navbar-overview"
+                style="margin-top: 12px; margin-left: -32px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="overview.html"
+                    >OVERVIEW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="Specs.html"
+                    style="margin-left: -20px"
+                    >SPECS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="compare.html"
+                    style="margin-left: -20px"
+                    >COMPARE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 justify-content-end">
+          <a href="purchase.html">
+            <button
+              class="buy-now-button"
+              style="margin-top: 11px; margin-left: -28px"
+            >
+              BUY NOW
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- background colour  -->
+    <div style="background-color: #fcfaf2" class="main">
+      <!--VENU 3 banner-->
+      <div
+        class="row"
+        style="
+          align-items: center;
+          text-align: center;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        "
+      >
+        <div class="responsive-image-left" style="justify-self: right">
+          <img
+            src="./images/specs/specs-image-left.png"
+            alt="specs-image-left"
+            style="width: 80%"
+          />
+        </div>
+        <div class="responsive-text">
+          <h1>VENU 3</h1>
+        </div>
+        <div class="responsive-image-right">
+          <img
+            src="./images/specs/specs-image-right.png"
+            alt="specs-image-right"
+            class="banner-pc"
+          />
+          <img
+            src="images/specs/Venu-3-specs-banner.png"
+            alt="venu-3-specs-banner"
+            class="banner-mobile"
+          />
+        </div>
+      </div>
+      <!--Line-->
+      <div class="row">
+        <hr class="line" />
+      </div>
+      <!--GENERAL-->
+      <div class="row">
+        <table class="responsive-table">
+          <tbody>
+            <tr>
+              <th>GENERAL</th>
+              <td style="vertical-align: bottom">Lens Material:</td>
+              <td style="vertical-align: bottom">Corning® Gorilla® Glass 3</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Bezel Material:</td>
+              <td>Stainless Steel</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Case material:</td>
+              <td>Fiber-Reinforced polymer</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Quick Release bands:</td>
+              <td>22 mm, Industry standard</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Strap material:</td>
+              <td>Silicone</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Physical size:</td>
+              <td>45 x 45 x 12 mm</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Weight:</td>
+              <td>30 g (47 g with included band)</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Water rating:</td>
+              <td>5 ATM</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Display Type:</td>
+              <td>AMOLED Optional Always-On Mode</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Display Size:</td>
+              <td>1.4" (35.4 mm) diameter</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Display resolution:</td>
+              <td>454 x 454 pixels</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Battery life:</td>
+              <td>
+                <li>Smartwatch mode: Up to 14 days</li>
+                <li>Battery Saver Smartwatch mode: Up to 26 days</li>
+                <li>GPS-Only GNSS mode: Up to 26 hours</li>
+                <li>All-Systems GNSS mode: Up to 20 hours</li>
+                <li>All-Systems GNSS mode with music: Up to 11 hours</li>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Charging Method:</td>
+              <td>Garmin proprietary plug charger</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Memory/History:</td>
+              <td>8 GB</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Touchscreen</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Built-in speaker/microphone</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Line-->
+      <div class="row">
+        <hr class="line" />
+      </div>
+      <!--CLOCK FEATURES-->
+      <div class="row">
+        <table class="responsive-table">
+          <tr>
+            <th>CLOCK FEATURES</th>
+            <td style="vertical-align: bottom">Time/date</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>GPS Time Sync</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Automatic daylight saving time</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Alarm clock</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Timer</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Stopwatch</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Sunrise/sunset times</td>
+          </tr>
+        </table>
+      </div>
+      <!--Line-->
+      <div class="row">
+        <hr class="line" />
+      </div>
+      <!--HEALTH & WELL BEING-->
+      <div class="row" style="padding-bottom: 48px">
+        <table class="responsive-table">
+          <tr>
+            <th>HEALTH & WELL BEING</th>
+            <td style="vertical-align: bottom">
+              Wrist-based heart rate (constant, every second)
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Daily resting heart rate</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Abnormal heart rate alerts(high and low)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Respiration rate (24x7)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              Pulse Ox blood oxygen saturation(spot-check, and optionally
+              all-day and in sleep)
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Fitness age Body Battery™ energy monitor</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>All-day stress</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Relaxation reminders</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Relaxation breathing timer</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Meditation</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Breathwork</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Sleep(advanced)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Sleep score and insights</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Sleep coach</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Nap detection</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Hydration</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Women's health</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Health snapshot</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Jet lag adviser</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="container-footer-fluid"
+      style="background-color: #032e3f; height: auto; padding: 20px 5%"
+    >
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-item">
+          <h3 class="footer-h3-font">Contact</h3>
+          <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">+65 6709 4220</a>
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">service.sg@garmin.com</a>
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Follow Us</h3>
+          <p style="padding-top: 20px; font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Facebook.svg" alt="facebook" />
+            <span style="padding-left: 0.89vw">Facebook</span>
+          </p>
+          <p style="font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Instagram.svg" alt="instagram" />
+            <span style="padding-left: 0.89vw">Instagram</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">Subscribe to our Newsletter</h3>
+          <p class="footer-p-font">
+            Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+            <div class="input-subscribe-container">
+              <input type="text" placeholder="Email" />
+              <button class="email-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p
+            style="
+              font-family: Roboto;
+              font-size: 13px;
+              color: #fcfaf2;
+              text-align: center;
+            "
+          >
+            <br />
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

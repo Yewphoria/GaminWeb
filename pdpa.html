@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="PDPA - Garmin " />
+    <meta
+      name="description"
+      content="Learn how Garmin adheres to the Personal Data Protection Act (PDPA) to safeguard your privacy. It is our commitment to transparent data practices and the rights you have regarding your personal information."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fade in animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>PDPA | Garmin</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MR8512556E");
+  </script>
+  <!-- styling  -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+    :root {
+      --white: #fcfaf2;
+      --background: #032e3f;
+      --background-hover: #fcfaf2;
+      --primary-blue: #0080c5;
+      --blue-gray: #fcfaf2;
+      --black: #032e3f;
+    }
+
+    html {
+      font-size: 16px;
+      font-family: "roboto";
+    }
+
+    body {
+      height: 100%;
+      background-color: var(--blue-gray);
+      font-family: "roboto";
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .pdpa-container {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      /* margin-top: 12em; */
+      max-width: 600px;
+      padding: 2em;
+      border-radius: 12px;
+      background-color: var(--background);
+    }
+
+    details {
+      font-size: 1rem;
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 8px;
+      position: relative;
+      max-width: 600px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    details:hover {
+      background-color: var(--background-hover);
+    }
+
+    details:hover svg {
+      stroke: var(--primary-blue);
+    }
+
+    details[open] {
+      background-color: var(--background-hover);
+    }
+
+    details[open] .faq-title {
+      color: var(--primary-blue);
+    }
+
+    summary {
+      user-select: none;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      list-style: none;
+      padding: 1em;
+      align-items: center;
+    }
+
+    summary svg {
+      stroke: var(--white);
+    }
+
+    details[open] summary svg {
+      stroke: var(--primary-blue);
+      transform: rotate(90deg);
+    }
+
+    summary:hover .faq-title {
+      color: var(--primary-blue);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:focus {
+      outline: none;
+    }
+
+    .faq-title {
+      color: var(--white);
+      width: 90%;
+      transition: all 250ms ease-in-out;
+      font-size: 18px;
+    }
+
+    .faq-content {
+      color: var(--black);
+      padding: 0.2em 1em 1em 1em;
+      font-weight: 300;
+      line-height: 1.5;
+      font-weight: lighter;
+    }
+
+    .expand-icon {
+      pointer-events: none;
+      position: absolute;
+      right: 1em;
+      transition: all 150ms ease-out;
+    }
+  </style>
+  <body>
+    <!-- Nav bar (Header div) -->
+    <!-- testing navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="margin-right: 0">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px" />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="flex-grow: 0"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="./svg/search.svg"
+              alt="search"
+              width="23px"
+              style="margin: 0px 5px"
+          /></a>
+          <a href="cart.html"
+            ><img
+              src="./svg/Cart.svg"
+              alt="cart"
+              width="25px"
+              style="margin: 0px 5px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Promotion stuff banner -->
+
+    <div class="promotion-banner">
+      <div class="m-scroll">
+        <div class="primary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+        <div class="secondary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- body -->
+
+    <div class="main">
+      <div class="headers">
+        <h1>Personal Data Protection Act</h1>
+      </div>
+      <h2>Privacy Policy for Garmin</h2>
+      <p><b>Last Updated: [11 November 2023]</b></p>
+      <p>
+        At Garmin, safeguarding your privacy is our top priority. This Privacy
+        Policy outlines our meticulous processes for collecting and handling
+        your personal data, specifically concerning checkout procedures,
+        providing details for customer support, and scheduling appointments with
+        our service center.
+      </p>
+      <p><b>Categories of Personal Data Processed by Garmin</b></p>
+      <p>1. Checkout Information:</p>
+      <p>
+        During purchases, we collect essential details such as name, address,
+        email, and payment information. <br />
+        The legal ground for this is to facilitate order processing and
+        fulfillment of the agreement between the user and Garmin during the
+        purchase process. <br />
+      </p>
+
+      <p>2. Customer Support:</p>
+      <p>
+        Engaging with our support services involves collecting information,
+        including name, address, phone number, email, and specifics regarding
+        the product or issue. The legal ground for this processing is our
+        legitimate interest in providing quality customer support.
+      </p>
+
+      <p>3. Service Center Appointments:</p>
+      <p>
+        Booking appointments requires providing particulars like name, contact
+        information, and detailed product information. <br />
+        The legal ground for this is Garmin's legitimate interest in ensuring
+        effective appointment management for the convenience of our users.
+      </p>
+
+      <p>4. Newsletter:</p>
+      <p>
+        If you provide your opt-in consent to receiving marketing information
+        from us, we will also process your email address for the purpose of
+        sending you marketing information about our products, services, and
+        apps, as well as newsletters. The legal ground for processing your email
+        address for this purpose is your consent. You may withdraw your consent
+        at any time by changing your preferences in your account or through the
+        unsubscribe link at the bottom of our marketing emails. The marketing
+        emails you receive from us are based on the preferences you provide in
+        your account, the locale indicated by your Internet Protocol (IP)
+        address, the types of Garmin devices you have added to your account, and
+        any subscriptions included in your account. The legal ground for
+        processing this data for this purpose is our legitimate interest in
+        reducing the number of marketing emails sent to each particular customer
+        by selecting which customers receive a particular marketing email rather
+        than sending every marketing email to every customer who has consented
+        to receiving marketing emails. If you reside in mainland China, we may
+        use your mobile phone number to send you marketing communications via
+        SMS.
+      </p>
+
+      <p><b>Categories of Recipients of Personal Data</b></p>
+      <p>1. Service Providers:</p>
+      <p>
+        Third-party entities may assist in order fulfillment, communication
+        processes, and analytical endeavors. <br />
+        Illustration: Payment processors, shipping services.
+      </p>
+
+      <p>2. Garmin Service Center:</p>
+      <p>
+        Details related to appointments are conveyed to our service center to
+        facilitate seamless scheduling and preparation. <br />
+        Exemplification: Internal Garmin service teams.
+      </p>
+
+      <p>3. Other Disclosures:</p>
+      <p>
+        Data may be disclosed to comply with legal requisites or for
+        investigative purposes. <br />
+        Exemplification: Legal proceedings, fraud prevention.
+      </p>
+
+      <p><b>International Transfers of Personal Data</b></p>
+      <p>
+        Your data may be transmitted to Garmin-owned entities globally for
+        support and service. <br />
+        Safeguards: Adherence to stringent data protection regulations.
+      </p>
+
+      <p><b>Children</b></p>
+      <p>
+        We refrain from purposefully gathering data from users under 13 (U.S.)
+        or 16 (rest of the world) without the explicit consent of parents or
+        guardians.
+      </p>
+
+      <p><b>Privacy Policy Updates </b></p>
+      <p>
+        Regular updates are conducted, with material alterations being
+        communicated through pertinent channels.
+      </p>
+
+      <p><b>Retention of Personal Data</b></p>
+      <p>
+        Data retention aligns with the necessity for specified purposes or as
+        mandated by applicable laws. <br />
+        Deletion Option: Easily accessible through user requests or the Account
+        Management Center.
+      </p>
+
+      <p><b>Automated Decision-Making</b></p>
+      <p>No automated decisions are made that significantly impact users.</p>
+
+      <p><b>Data Controller and Data Protection Officer</b></p>
+      <p>
+        For inquiries pertaining to data, contact details are available based on
+        respective regions.
+      </p>
+
+      <p><b>Manage Your Data</b></p>
+      <p>
+        Users retain the ability to seamlessly manage their data by reaching out
+        to our customer support.
+      </p>
+      <br />
+      <br />
+      <h2>Cookie Policy for Garmin</h2>
+      <p><b>Introduction</b></p>
+      <p>
+        Cookies are small files stored on your device when you visit a website.
+        Cookies can perform various functions, such as remembering your
+        information, supporting shopping cart functionality, and analyzing site
+        usage. This policy covers cookies and similar technologies used by
+        Garmin on its websites. Please note that when we refer to "cookies," it
+        includes similar technologies like pixels, web beacons, or clear GIFs.
+      </p>
+
+      <p><b>Learn More About Cookies</b></p>
+      <p>
+        If you want to learn more about cookies in general, you can visit
+        informational websites, such as allaboutcookies.org or aboutcookies.org.
+      </p>
+
+      <p><b>Our Use of Cookies</b></p>
+      <p>We use cookies for the following purposes:</p>
+      <p>
+        1. Facilitating Site Functionality: Providing you with the best possible
+        experience on our websites.
+      </p>
+      <p>
+        2. Identifying and Fixing Problems: Analyzing and resolving issues with
+        the website.
+      </p>
+      <p>
+        3. Analyzing Site Usage: Compiling aggregated statistics to understand
+        user behavior and improve our services.
+      </p>
+      <p>
+        4. Remembering Your Preferences: Enhancing your experience by
+        remembering your preferences.
+      </p>
+      <p>
+        5. Preventing Fraudulent Activity: Detecting and preventing fraudulent
+        activity on our websites.
+      </p>
+      <p>
+        6. Securing the Website and Your Data: Enhancing the security of the
+        website and protecting your data.
+      </p>
+      <p>
+        7. Understanding Marketing Effectiveness: Analyzing the effectiveness of
+        marketing campaigns and improving SEO.
+      </p>
+
+      <p>
+        <b
+          >We collect information, directly or through third-party providers,
+          including:</b
+        >
+      </p>
+      <p>
+        Network or Connection Information: Such as your IP address.<br />
+        Device Information: Such as your browser type, language, time zone,
+        operating system, or location.<br />
+        Usage Information: Such as the time and date of your visit, products
+        purchased, or page views.
+      </p>
+
+      <p><b>Third-Party Services</b></p>
+      <p>
+        We use third-party services to facilitate cookies and monitor website
+        performance, including Tealium IQ Tag Management, Google Tag Manager,
+        TrustArc for cookie management, and others for performance analysis and
+        affiliate marketing programs.
+      </p>
+
+      <p><b>Categories of Cookies</b></p>
+      <p>
+        Required Cookies: Necessary for basic site functions, such as
+        recognizing sign-in credentials or updating the shopping cart. Most are
+        session cookies.<br />
+        Functional Cookies: Aid in site analysis and performance, remembering
+        location or language preferences. Some persist for a longer period.<br />
+        Advertising Cookies: Facilitate advertising on partner websites,
+        personalize ads, and evaluate marketing campaign effectiveness.
+      </p>
+
+      <p><b>Managing Your Cookie Preferences</b></p>
+      <p>
+        On Our Website: Click "Cookie Preferences" in the bottom left corner of
+        our website to accept, decline, or manage preferences.<br />
+        Through Your Browser: Adjust browser settings to accept, reject, or
+        prompt for cookies. Note that blocking all cookies may affect site
+        functionality.<br />
+        Through Third Parties: Opt-out of targeted advertising by using provided
+        links.
+      </p>
+
+      <p><b>Further Information</b></p>
+      <p>
+        For more information or assistance, contact our third-party providers,
+        review our privacy policies, or refer to our contact details for
+        inquiries.
+      </p>
+
+      <p><b>Updates to the Cookie Policy</b></p>
+      <p>
+        This Cookie Policy may be updated periodically to reflect improvements,
+        technological changes, or legal requirements. Refer to the "Last
+        Updated" legend for the latest revision date.
+      </p>
+    </div>
+    <!-- footer -->
+    <div
+      class="container-footer-fluid"
+      style="background-color: #032e3f; height: auto; padding: 20px 5%"
+    >
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-item">
+          <h3 class="footer-h3-font">Contact</h3>
+          <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">+65 6709 4220</a>
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">service.sg@garmin.com</a>
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Follow Us</h3>
+          <p style="padding-top: 20px; font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Facebook.svg" alt="facebook" />
+            <span style="padding-left: 0.89vw">Facebook</span>
+          </p>
+          <p style="font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Instagram.svg" alt="instagram" />
+            <span style="padding-left: 0.89vw">Instagram</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">Subscribe to our Newsletter</h3>
+          <p class="footer-p-font">
+            Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+            <div class="input-subscribe-container">
+              <input type="text" placeholder="Email" />
+              <button class="email-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p
+            style="
+              font-family: Roboto;
+              font-size: 13px;
+              color: #fcfaf2;
+              text-align: center;
+            "
+          >
+            <br />
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap script -->
+    <script>
+      class Accordion {
+        constructor(el) {
+          this.el = el;
+          this.summary = el.querySelector("summary");
+          this.content = el.querySelector(".faq-content");
+          this.expandIcon = this.summary.querySelector(".expand-icon");
+          this.animation = null;
+          this.isClosing = false;
+          this.isExpanding = false;
+          this.summary.addEventListener("click", (e) => this.onClick(e));
+        }
+
+        onClick(e) {
+          e.preventDefault();
+          this.el.style.overflow = "hidden";
+
+          if (this.isClosing || !this.el.open) {
+            this.open();
+          } else if (this.isExpanding || this.el.open) {
+            this.shrink();
+          }
+        }
+
+        shrink() {
+          this.isClosing = true;
+
+          const startHeight = `${this.el.offsetHeight}px`;
+          const endHeight = `${this.summary.offsetHeight}px`;
+
+          if (this.animation) {
+            this.animation.cancel();
+          }
+
+          this.animation = this.el.animate(
+            {
+              height: [startHeight, endHeight],
+            },
+            {
+              duration: 200,
+              easing: "ease-out",
+            }
+          );
+
+          this.animation.onfinish = () => {
+            this.expandIcon.setAttribute("src", "assets/plus.svg");
+            return this.onAnimationFinish(false);
+          };
+          this.animation.oncancel = () => {
+            this.expandIcon.setAttribute("src", "assets/plus.svg");
+            return (this.isClosing = false);
+          };
+        }
+
+        open() {
+          this.el.style.height = `${this.el.offsetHeight}px`;
+          this.el.open = true;
+          window.requestAnimationFrame(() => this.expand());
+        }
+
+        expand() {
+          this.isExpanding = true;
+
+          const startHeight = `${this.el.offsetHeight}px`;
+          const endHeight = `${
+            this.summary.offsetHeight + this.content.offsetHeight
+          }px`;
+
+          if (this.animation) {
+            this.animation.cancel();
+          }
+
+          this.animation = this.el.animate(
+            {
+              height: [startHeight, endHeight],
+            },
+            {
+              duration: 200,
+              easing: "ease-out",
+            }
+          );
+
+          this.animation.onfinish = () => {
+            this.expandIcon.setAttribute("src", "assets/minus.svg");
+            return this.onAnimationFinish(true);
+          };
+          this.animation.oncancel = () => {
+            this.expandIcon.setAttribute("src", "assets/minus.svg");
+            return (this.isExpanding = false);
+          };
+        }
+
+        onAnimationFinish(open) {
+          this.el.open = open;
+          this.animation = null;
+          this.isClosing = false;
+          this.isExpanding = false;
+          this.el.style.height = this.el.style.overflow = "";
+        }
+      }
+
+      document.querySelectorAll("details").forEach((el) => {
+        new Accordion(el);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Contact Us - Garmin Singapore" />
+    <meta
+      name="description"
+      content="Connect with Garmin's dedicated support team. Reach out to us for inquiries, assistance, or feedback. Your satisfaction is our priority"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fade in animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- prefetch images -->
+    <link rel="prefetch" href="./images/color-choices/venu-3-black-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-black-cf-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-frenchgray-cf-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-ivory-cf-lg.jpg"
+    />
+    <link rel="prefetch" href="./images/color-choices/venu-3s-pink-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-sagegray-cf-lg.jpg"
+    />
+    <link rel="prefetch" href="./images/watch-angles/venu-3-black-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-01-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-02-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-03-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-04-lg.jpg"
+    />
+
+    <title>Contact Us | Garmin</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MR8512556E");
+  </script>
+
+  <!-- styling  -->
+  <style>
+    tr {
+      display: flex;
+      flex-direction: row;
+      /* height: 26.07vw; */
+    }
+
+    td {
+      vertical-align: top;
+      padding: 24px;
+      /* font-size: 1.3vw; */
+      width: 50%;
+      min-height: 300px;
+    }
+
+    tr:first-child td:last-child,
+    tr:last-child td:first-child {
+      background-color: white;
+    }
+
+    tr:first-child td:first-child,
+    tr:last-child td:last-child {
+      background-color: #032e3f;
+      color: white;
+    }
+
+    tr:last-child td:last-child h3 {
+      color: white;
+    }
+
+    li {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 991px) {
+      tr {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      td {
+        width: 100%;
+        min-height: 26.07vw;
+        /* margin-bottom: 20px; */
+      }
+
+      tr:last-child td:last-child {
+        background-color: white;
+        color: #032e3f;
+      }
+
+      tr:last-child td:last-child h3 {
+        color: #032e3f;
+      }
+
+      tr:last-child td:first-child {
+        background-color: #032e3f;
+        color: white;
+      }
+
+      tr:last-child td:first-child h3 {
+        color: white;
+      }
+    }
+    .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-overlay {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: 0% 20%;
+      @media (max-width: 768px) {
+        height: 140px;
+        object-position: center top;
+      }
+    }
+
+    .overlay-text {
+      position: absolute;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: start;
+      color: #fff; /* Text color */
+      width: 100%;
+      background: linear-gradient(
+        90deg,
+        #e3e3e3 18.75%,
+        rgba(255, 255, 255, 0) 48.96%
+      );
+    }
+
+    .overlay-text h1 {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      height: 100%;
+      margin-left: 10%;
+    }
+    .container {
+      background-color: #fff;
+      /* width: 30%; */
+      max-width: 626px;
+      margin: 24px auto;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      /* margin-bottom: 24px; */
+      /* margin-top: 115px; */
+      border: 1px solid #d2d2d2;
+      border-radius: 12px;
+    }
+  </style>
+  <body>
+    <!-- Nav bar (Header div) -->
+    <!-- testing navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="margin-right: 0">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px" />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="flex-grow: 0"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="./svg/search.svg"
+              alt="search"
+              width="23px"
+              style="margin: 0px 5px"
+          /></a>
+          <a href="cart.html"
+            ><img
+              src="./svg/Cart.svg"
+              alt="cart"
+              width="25px"
+              style="margin: 0px 5px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Promotion stuff banner -->
+
+    <div class="promotion-banner">
+      <div class="m-scroll">
+        <div class="primary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+        <div class="secondary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div class="container-fluid row main">
+      <div class="image-container">
+        <img
+          class="image-overlay img-fluid"
+          src="./images/contact/garmin-asia-contactus-lg.jpg"
+          alt="instagram"
+        />
+        <div class="overlay-text">
+          <h1>CONTACT US</h1>
+        </div>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <h3 style="color: white">CUSTOMER SERVICE</h3>
+              Call: 800-8861-072 (Toll Free) <br />
+              Email:
+              <a href="mailto:service.sg@garmin.com">service.sg@garmin.com</a>
+              <br />
+              Hours: Monday - Friday 9 AM – 5 PM (Closed on weekends and
+              national holidays) <br />
+              <br />
+              Or drop us a message <a href="contactform.html">here</a>
+            </td>
+            <td>
+              <h3>ENTERPRISE COOPERATION</h3>
+              <li>
+                For business cooperation, please email to
+                <a href="mailto:GarminSEASales@garmin.com"
+                  >GarminSEASales@garmin.com</a
+                >.
+              </li>
+              <li>
+                For technical cooperation, please email to
+                <a href="mailto:Eng.BusDev.Apac@garmin.com"
+                  >Eng.BusDev.Apac@garmin.com</a
+                >.
+              </li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3>PRODUCT SERVICING</h3>
+              If you have products that need to be repaired, please visit
+              <a href="service.html">Service Center</a> to book an appointment.
+            </td>
+            <td>
+              <h3>MEDIA RELATIONS</h3>
+              <li>
+                For media requirement, please email to
+                <a href="asia-media@garmin.com">asia-media@garmin.com</a>.
+              </li>
+              <li>Have an idea? <a href="">Tell us about it.</a></li>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="container-footer-fluid"
+      style="background-color: #032e3f; height: auto; padding: 20px 5%"
+    >
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-item">
+          <h3 class="footer-h3-font">Contact</h3>
+          <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">+65 6709 4220</a>
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">service.sg@garmin.com</a>
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Follow Us</h3>
+          <p style="padding-top: 20px; font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Facebook.svg" alt="facebook" />
+            <span style="padding-left: 0.89vw">Facebook</span>
+          </p>
+          <p style="font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Instagram.svg" alt="instagram" />
+            <span style="padding-left: 0.89vw">Instagram</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">Subscribe to our Newsletter</h3>
+          <p class="footer-p-font">
+            Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+            <div class="input-subscribe-container">
+              <input type="text" placeholder="Email" />
+              <button class="email-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p
+            style="
+              font-family: Roboto;
+              font-size: 13px;
+              color: #fcfaf2;
+              text-align: center;
+            "
+          >
+            <br />
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const productImages = document.querySelectorAll(".product-image");
+
+        productImages.forEach(function (image) {
+          image.addEventListener("click", function () {
+            // Remove the 'selected' class from all images
+            productImages.forEach(function (img) {
+              img.classList.remove("selected");
+            });
+
+            // Add the 'selected' class to the clicked image
+            this.classList.add("selected");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

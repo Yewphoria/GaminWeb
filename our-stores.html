@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Our Stores - Garmin" />
+    <meta
+      name="title"
+      content="Discover Garmin products at a store near you. Locate Garmin stores in Singapore and experience our latest technology in person. Visit us to explore the future of fitness and navigation."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fade in animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- prefetch images -->
+    <link rel="prefetch" href="./images/color-choices/venu-3-black-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-black-cf-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-frenchgray-cf-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-ivory-cf-lg.jpg"
+    />
+    <link rel="prefetch" href="./images/color-choices/venu-3s-pink-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/color-choices/venu-3s-sagegray-cf-lg.jpg"
+    />
+    <link rel="prefetch" href="./images/watch-angles/venu-3-black-cf-lg.jpg" />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-01-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-02-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-03-lg.jpg"
+    />
+    <link
+      rel="prefetch"
+      href="./images/watch-angles/venu-3-black-pd-04-lg.jpg"
+    />
+
+    <title>Our Stores | Garmin</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MR8512556E");
+  </script>
+  <!-- styling  -->
+  <style>
+    h2 {
+      color: var(--Light, #fcfaf2);
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 700;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    .map {
+      justify-content: center;
+      height: 45.391vw;
+      margin-bottom: 12px;
+      /* padding-bottom: 1.875vw; */
+    }
+
+    .box-content {
+      color: var(--Light, #fcfaf2);
+      font-family: Roboto;
+
+      padding: 2.5vw 1.875vw;
+    }
+
+    .box {
+      background: var(--Dark, #032e3f);
+      border-radius: 12px;
+      height: 200px;
+      margin-bottom: 0.938vw;
+      margin-right: 0.938vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      .box {
+        height: 44vw;
+        margin-right: 0;
+      }
+      .box-content {
+        /* font-size: 3vw; */
+        padding: 7.5vw 5.625vw;
+      }
+    }
+  </style>
+  <body>
+    <!-- Nav bar (Header div) -->
+    <!-- testing navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="margin-right: 0">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px" />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="flex-grow: 0"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="./svg/search.svg"
+              alt="search"
+              width="23px"
+              style="margin: 0px 5px"
+          /></a>
+          <a href="cart.html"
+            ><img
+              src="./svg/Cart.svg"
+              alt="cart"
+              width="25px"
+              style="margin: 0px 5px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Promotion stuff banner -->
+
+    <div class="promotion-banner">
+      <div class="m-scroll">
+        <div class="primary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+        <div class="secondary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- body to be added  -->
+    <div style="background-color: #fcfaf2">
+      <div class="main">
+        <div class="headers">
+          <h1>OUR STORES</h1>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.785707393712!2d103.83064517496572!3d1.303584598684043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19da39341bd5%3A0xb980c1391eca0482!2sGarmin%20Brand%20Store%20(Wisma%20Atria)!5e0!3m2!1sen!2ssg!4v1699416167742!5m2!1sen!2ssg"
+            width="100%"
+            height="100%"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box">
+              <div class="box-content">
+                <h2>Wisma Atria</h2>
+                435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+                <br /><br />
+                +65 6235 7523
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="box-content">
+                <h2>NEX</h2>
+                23 Serangoon Central, #01-82 NEX, Singapore 556083 <br /><br />
+                +65 6908 1711
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box" style="margin-right: 0">
+              <div class="box-content">
+                <h2>Plaza Singapura</h2>
+                68 Orchard Road #02-02/03 Plaza Singapura, Singapore 238839
+                <br /><br />
+                +65 6908 1211
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box">
+              <div class="box-content">
+                <h2>Funan</h2>
+                107 North Bridge Road #03-26 Funan Mall, Singapore 179105
+                <br /><br />
+                +65 9845 2222
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="box-content">
+                <h2>Westgate</h2>
+                3 Gateway Dr, #01-16A, Singapore 608532 <br /><br />
+                +65 6252 0301
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height: 0.938vw"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="container-footer-fluid"
+      style="background-color: #032e3f; height: auto; padding: 20px 5%"
+    >
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-item">
+          <h3 class="footer-h3-font">Contact</h3>
+          <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">+65 6709 4220</a>
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">service.sg@garmin.com</a>
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Follow Us</h3>
+          <p style="padding-top: 20px; font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Facebook.svg" alt="facebook" />
+            <span style="padding-left: 0.89vw">Facebook</span>
+          </p>
+          <p style="font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Instagram.svg" alt="instagram" />
+            <span style="padding-left: 0.89vw">Instagram</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">Subscribe to our Newsletter</h3>
+          <p class="footer-p-font">
+            Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+            <div class="input-subscribe-container">
+              <input type="text" placeholder="Email" />
+              <button class="email-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p
+            style="
+              font-family: Roboto;
+              font-size: 13px;
+              color: #fcfaf2;
+              text-align: center;
+            "
+          >
+            <br />
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

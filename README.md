@@ -1,2 +1,1 @@
-# GaminWeb
-Gamin Web rebrand (Project)
+# garmin

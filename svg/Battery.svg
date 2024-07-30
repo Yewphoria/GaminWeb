@@ -1,0 +1,13 @@
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Battery_Life" clip-path="url(#clip0_122_234)">
+<g id="Group">
+<path id="Vector" d="M21.876 36.608H43.124H43.252M21.876 36.608V25.6H43.252V36.608M21.876 36.608V47.616H43.124H43.252V36.608M21.876 36.608H43.252M43.124 25.472H21.876V14.464H43.252V25.472H43.124ZM43.124 58.752H21.876V47.744H43.252V58.752H43.124Z" stroke="#FCFAF2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M23.6681 9.60001H17.1401V63.36H47.8601V9.60001H41.3321V0.640015H23.6681V9.60001Z" stroke="#FCFAF2" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_122_234">
+<rect width="64" height="64" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="VENU 3 - Garmin " />
+    <meta
+      name="description"
+      content="Discover the newest launch from Garmin, the VENU 3 WATCH. VENU 3 is a cutting-edge smartwatch packed with advanced features. From fitness tracking to health monitoring, explore the Venu 3's sleek design and performance capabilities. Start your active lifestyle with Garmin technology."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>VENU 3 | Garmin</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MR8512556E");
+  </script>
+  <!-- styling  -->
+  <style>
+    /* styling for container-workout */
+    .container-workout {
+      width: 100%;
+      height: 1001px;
+      background-color: #fcfaf2;
+    }
+    .container-workout-left {
+      background: linear-gradient(270deg, #032e3f 2.04%, #004c6a 98.27%);
+      height: 1001px;
+      width: 100%;
+    }
+
+    .text-box-header {
+      color: #fcfaf2;
+      font-family: "Oswald";
+      font-size: 64px;
+    }
+    .text-box-subheader {
+      color: #fcfaf2;
+      font-family: "Oswald";
+      font-size: 32px;
+    }
+    .text-box-subheader-right {
+      color: var(--Dark, #032e3f);
+      font-family: "Oswald";
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .mediation-image {
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      right: 0; /* Adjust this based on your layout */
+    }
+
+    /* feature hightlight styling */
+    .highlight-text-box {
+      height: 159px;
+      width: 100%;
+      background-color: #032e3f;
+    }
+
+    .highlight-text-box-mobile {
+      height: 60px;
+      width: 100%;
+      background-color: #032e3f;
+    }
+
+    /* horizontal scrolling styling */
+    .sticky-parent {
+      background-color: #032e3f;
+      height: 400vh;
+    }
+
+    .sticky {
+      overflow: hidden;
+      position: sticky;
+      top: 5%;
+      height: 100vh;
+    }
+
+    .horizontal-scroll {
+      position: absolute;
+      top: 5%;
+      height: 100%;
+      width: 400vw;
+      will-change: transform;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .scroll-content {
+      height: 100%;
+      width: 100vw;
+    }
+
+    .highlight-container {
+      margin-top: 120px;
+      height: 540px;
+      width: 992px;
+      border-radius: 22px;
+      background: white;
+      margin-left: 144px;
+      margin-bottom: 20px;
+    }
+
+    .content-container-mobile {
+      margin-top: 8px;
+      height: 164px;
+      width: 342px;
+      background: white;
+      margin-left: 25px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .gif {
+      border-top-right-radius: 22px;
+      border-bottom-right-radius: 22px;
+      width: 453px;
+      height: 540px;
+    }
+
+    .gif-mobile {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      width: 128px;
+      height: 164px;
+    }
+
+    .features-container {
+      height: 270px;
+      width: 100%;
+      background-color: #032e3f;
+      z-index: 1;
+    }
+
+    .built-in-app-container {
+      background-color: #fcfaf2;
+      height: 780px;
+      width: 100%;
+    }
+
+    .built-in-app-container-mobile {
+      background-color: #fcfaf2;
+      height: 430px;
+      width: 100%;
+    }
+    .built-in-app-container .header-text {
+      color: #032e3f;
+      font-family: "Oswald";
+      font-size: 64px;
+      font-weight: 500;
+    }
+    .built-in-app-container-mobile .header-text-mobile {
+      color: #032e3f;
+      font-family: "Oswald";
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .built-in-app-container .content-container {
+      height: 500px;
+      width: 93%;
+      background: #032e3f;
+      border-radius: 36px;
+      margin: 32px auto 0 auto;
+      display: flex;
+    }
+    .built-in-app-container-mobile .content-container-mobile {
+      height: 292px;
+      width: 238px;
+      background: #032e3f;
+      border-radius: 36px;
+      margin: 20px auto 0 auto;
+    }
+
+    .content-container .content-subheader h2 {
+      color: #fcfaf2;
+      font-family: "Oswald";
+      font-size: 32px;
+      margin-right: 190px;
+      margin-top: 168px;
+      margin-bottom: 0px;
+    }
+
+    .content-container-mobile .content-subheader-mobile h2 {
+      color: #fcfaf2;
+      font-family: "Oswald";
+      font-size: 12px;
+      margin: 14px auto 0 35px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .carousel-control-prev {
+      left: 0;
+    }
+
+    .carousel-control-next {
+      right: 0;
+    }
+    /* buy-now-container styling */
+
+    .buy-now-container {
+      height: 324px;
+      width: 100%;
+      background-color: #fcfaf2;
+    }
+
+    .buy-now-container-mobile {
+      height: 324px;
+      width: 100%;
+      background-color: #fcfaf2;
+    }
+
+    .buy-now-container h1 {
+      color: #032e3f;
+      font-family: "Oswald";
+      font-size: 64px;
+    }
+    .buy-now-container p {
+      color: #032e3f;
+      font-family: "Roboto";
+      font-size: 18px;
+    }
+
+    .buynow-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .buynow-button {
+      /* width: 83px; */
+      padding: 6px 16px;
+      /* height: 32px; */
+      border-radius: 6px;
+      background: var(--Accent-2, #e36339);
+      color: #fcfaf2;
+      font-family: "Oswald";
+      font-size: 24px;
+      border: none;
+      text-align: center;
+    }
+    .buynow-button-mobile {
+      padding: 6px 16px;
+      /* height: 32px; */
+      border-radius: 6px;
+      background: var(--Accent-2, #e36339);
+      color: #fcfaf2;
+      font-family: "Oswald";
+      font-size: 20px;
+      border: none;
+      text-align: center;
+    }
+
+    /* responsive screen styling */
+    /* for Desktop version  */
+    @media only screen and (min-width: 768px) {
+      #overview-desktop {
+        display: block;
+      }
+
+      #overview-mobile {
+        display: none;
+      }
+      #ambassador-mobile {
+        height: auto;
+      }
+      #ambassador-header {
+        display: none;
+      }
+    }
+
+    /* For mobile version */
+    @media only screen and (max-width: 768px) {
+      #overview-desktop {
+        display: none;
+      }
+      #overview-mobile {
+        display: block;
+        overflow-x: clip;
+      }
+      #ambassador-mobile {
+        height: 300px;
+        object-fit: cover;
+        object-position: 82%;
+      }
+    }
+
+    /* animation css */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1.2s ease-out;
+    }
+    .fade-upVisible {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  </style>
+  <body>
+    <!-- Nav bar (Header div) -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="margin-right: 0">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px" />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="flex-grow: 0"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="./svg/search.svg"
+              alt="search"
+              width="23px"
+              style="margin: 0px 5px"
+          /></a>
+          <a href="cart.html"
+            ><img
+              src="./svg/Cart.svg"
+              alt="cart"
+              width="25px"
+              style="margin: 0px 5px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Promotion stuff banner -->
+
+    <div class="promotion-banner">
+      <div class="m-scroll">
+        <div class="primary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+        <div class="secondary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second nav bar  Venu 3 desktop version -->
+    <div
+      class="container-2nd-navbar"
+      style="position: sticky; top: 0; z-index: 2; opacity: 1"
+      id="overview-desktop"
+    >
+      <div class="row d-flex justify-content-between">
+        <div class="col-10">
+          <div class="d-flex">
+            <div>
+              <h3 class="second-navbar-h3-font">VENU 3</h3>
+            </div>
+            <div>
+              <ul class="nav second-navbar-overview" style="margin-top: 10px">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="overview.html"
+                    >OVERVIEW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="Specs.html"
+                    style="margin-left: -20px"
+                    >SPECS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="compare.html"
+                    style="margin-left: -20px"
+                    >COMPARE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-end">
+          <a href="purchase.html">
+            <button class="buy-now-button">BUY NOW</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Second nav bar  Venu 3 mobile version -->
+    <div
+      class="container-2nd-navbar"
+      style="position: sticky; top: 0; opacity: 1; z-index: 2"
+      id="overview-mobile"
+    >
+      <div class="row">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-3">
+              <h3
+                class="second-navbar-h3-font"
+                style="
+                  font-size: 17px;
+                  padding-left: 10px;
+                  padding-top: 18px;
+                  padding-bottom: 0px;
+                "
+              >
+                VENU 3
+              </h3>
+            </div>
+            <div class="col-9">
+              <ul
+                class="nav second-navbar-overview"
+                style="margin-top: 12px; margin-left: -32px"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="overview.html"
+                    >OVERVIEW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="Specs.html"
+                    style="margin-left: -20px"
+                    >SPECS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="compare.html"
+                    style="margin-left: -20px"
+                    >COMPARE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 justify-content-end">
+          <a href="purchase.html">
+            <button
+              class="buy-now-button"
+              style="margin-top: 11px; margin-left: -28px"
+            >
+              BUY NOW
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work-out-benefits container desktop version -->
+    <div
+      class="container-workout"
+      id="overview-desktop"
+      style="position: relative"
+    >
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="container-workout-left">
+            <div
+              class="text-box-header"
+              style="padding-left: 44px; padding-top: 33px"
+            >
+              TRACK
+            </div>
+            <div class="reveal">
+              <div class="image-wrap">
+                <div class="sport-image" style="margin-top: 31px">
+                  <img
+                    src="./images/Garmin-sports.webp"
+                    alt="venu3-sport"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="text-box-header"
+              style="padding-top: 44px; padding-left: 430px"
+            >
+              STRENGTHEN
+            </div>
+            <div class="fade-up">
+              <div
+                class="text-box-subheader"
+                style="padding-top: 94px; padding-left: 84px"
+              >
+                LEVEL UP YOUR SPIRIT
+              </div>
+
+              <p
+                style="
+                  color: #fcfaf2;
+                  font-family: Roboto;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  padding-left: 84px;
+                "
+              >
+                Not just about physical strength, exercising<br />
+                builds resilience mentally too. Discover the path<br />
+                to a brand new you. Feel strong, feel confident,<br />
+                feel different.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="fade-up">
+            <div
+              class="text-box-subheader-right"
+              style="margin: 229px 82px 0 auto; width: 346px; height: auto"
+            >
+              <h1 style="font-size: 28px">KNOW THE REAL YOU</h1>
+            </div>
+            <p
+              style="
+                color: var(--Dark, #032e3f);
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                width: 346px;
+                margin: auto 82px 0 auto;
+              "
+            >
+              Monitor your health data easily and gain <br />
+              insights into your body. Unleash your <br />
+              potential for greater self-improvement and <br />
+              ultimate well-being.
+            </p>
+          </div>
+
+          <div class="mediation-image">
+            <img
+              src="./images/Garmin-mediation.webp"
+              alt="mediation"
+              width="100%"
+              height="auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work-out-benefits container mobile version -->
+    <div
+      class="container-workout"
+      id="overview-mobile"
+      style="height: 610px; width: 100%"
+    >
+      <div
+        class="container-core"
+        style="
+          height: 610px;
+          width: 100%;
+          background: linear-gradient(270deg, #032e3f 2.04%, #004c6a 98.27%);
+        "
+      >
+        <div class="text-box">
+          <h2
+            class="text-box-header"
+            style="font-size: 28px; padding-top: 24px; padding-left: 24px"
+          >
+            TRACK
+          </h2>
+        </div>
+        <h2
+          class="text-box-subheader"
+          style="font-size: 14px; padding-left: 24px"
+        >
+          KNOW THE REAL YOU
+        </h2>
+        <p
+          class="text-box-subheader"
+          style="font-size: 10px; padding-left: 24px"
+        >
+          Monitor your health data easily and gain insights <br />
+          into your body. Unleash your potential for greater <br />
+          self-improvement and ultimate well-being.
+        </p>
+        <div class="sport-image" style="margin-top: -25px">
+          <img
+            src="./images/Garmin-sports.webp"
+            alt="venu3-sport"
+            width="100%"
+          />
+        </div>
+        <h2
+          class="text-box-header"
+          style="
+            font-size: 28px;
+            padding-top: 24px;
+            padding-right: 24px;
+            text-align: end;
+          "
+        >
+          STRENGTH
+        </h2>
+        <h2
+          class="text-box-subheader"
+          style="font-size: 14px; padding-right: 24px; text-align: end"
+        >
+          LEVEL UP YOUR SPIRIT
+        </h2>
+        <p
+          class="text-box-subheader"
+          style="font-size: 10px; padding-right: 24px; text-align: end"
+        >
+          Monitor your health data easily and gain not just about <br />
+          physical strength, exercising builds resilience mentally too.<br />
+          Discover the path to a brand new you. <br />
+          Feel strong, feel confident, feel different.
+        </p>
+        <img
+          src="./images/Garmin-mediation-mobile.webp"
+          alt="mediation"
+          width="100%"
+          height="auto"
+          style="margin-top: -30px"
+        />
+      </div>
+    </div>
+    <!-- features-container desktop version -->
+    <div class="sticky-parent" id="overview-desktop">
+      <div class="sticky">
+        <div class="highlight-text-box">
+          <h2
+            style="
+              color: #fcfaf2;
+              font-family: Oswald;
+              font-size: 64px;
+              padding-top: 32px;
+              padding-left: 44px;
+            "
+          >
+            FEATURE HIGHLIGHT
+          </h2>
+        </div>
+        <div class="horizontal-scroll">
+          <div class="scroll-content">
+            <div class="highlight-container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2
+                    style="
+                      font-size: 28px;
+                      font-family: Oswald;
+                      padding-top: 178px;
+                      padding-left: 64px;
+                    "
+                  >
+                    HEALTH AND WELLNESS INSIGHTS
+                  </h2>
+                  <p
+                    style="
+                      font-size: 20px;
+                      font-family: Roboto;
+                      padding-top: 24px;
+                      padding-left: 64px;
+                    "
+                  >
+                    Gain a deeper understanding of your physique<br />
+                    with our health and wellness insights. Track your<br />
+                    fitness progress, monitor your vital signs, and <br />
+                    receive recommendations catered for your body<br />
+                    type. Take control of your body, take control of <br />
+                    your health.
+                  </p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="gif" style="margin-left: 0px; margin-top: 0px">
+                    <video
+                      width="100%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="border-radius: 20px"
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/health-and-wellness-insights.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-content">
+            <div class="highlight-container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2
+                    style="
+                      font-size: 28px;
+                      font-family: Oswald;
+                      padding-top: 178px;
+                      padding-left: 64px;
+                    "
+                  >
+                    14-DAY BATTERY LIFE
+                  </h2>
+                  <p
+                    style="
+                      font-size: 20px;
+                      font-family: Roboto;
+                      padding-top: 24px;
+                      padding-left: 64px;
+                    "
+                  >
+                    Stay active with a peace of mind. Our long-lasting<br />
+                    battery life promise you uninterrupted sessions of<br />
+                    training. Keep going without the worry of constant <br />
+                    charging.
+                  </p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="gif" style="margin-left: 0px; margin-top: 0px">
+                    <video
+                      width="100%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="
+                        border-top-right-radius: 22px;
+                        border-bottom-right-radius: 22px;
+                      "
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/alldaybattery.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-content">
+            <div class="highlight-container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2
+                    style="
+                      font-size: 28px;
+                      font-family: Oswald;
+                      padding-top: 178px;
+                      padding-left: 64px;
+                    "
+                  >
+                    ADVANCED FITNESS FEATURES
+                  </h2>
+                  <p
+                    style="
+                      font-size: 20px;
+                      font-family: Roboto;
+                      padding-top: 24px;
+                      padding-left: 64px;
+                    "
+                  >
+                    Highly accurate and detailed data allows for a <br />
+                    better workout plan catered for your body and <br />
+                    needs. Access our comprehensive health and <br />
+                    performance metrics and up your fitness game.
+                  </p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="gif" style="margin-left: 0px; margin-top: 0px">
+                    <video
+                      width="100%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="border-radius: 20px"
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/sports.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-content">
+            <div class="highlight-container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2
+                    style="
+                      font-size: 28px;
+                      font-family: Oswald;
+                      padding-top: 178px;
+                      padding-left: 64px;
+                    "
+                  >
+                    BRIGHT DISPLAY
+                  </h2>
+                  <p
+                    style="
+                      font-size: 20px;
+                      font-family: Roboto;
+                      padding-top: 24px;
+                      padding-left: 64px;
+                    "
+                  >
+                    Get information at one glance. Whether you are <br />
+                    working out on a sunny day or at night, our screen <br />
+                    ensures effortless readability at all times. Say <br />
+                    goodbye to straining your eyes now!
+                  </p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="gif" style="margin-left: 0px; margin-top: 0px">
+                    <video
+                      width="100%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="border-radius: 20px"
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/bright-display.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-content">
+            <div class="highlight-container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2
+                    style="
+                      font-size: 28px;
+                      font-family: Oswald;
+                      padding-top: 178px;
+                      padding-left: 64px;
+                    "
+                  >
+                    WORKS WITH IPHONE AND ANDROID
+                  </h2>
+                  <p
+                    style="
+                      font-size: 20px;
+                      font-family: Roboto;
+                      padding-top: 24px;
+                      padding-left: 64px;
+                    "
+                  >
+                    Seamless integration with both IOS and Android <br />
+                    ecosystem. Increased productivity and user <br />
+                    experience to meet your expectations. Control <br />
+                    your device at your fingertips.
+                  </p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="gif" style="margin-left: 0px; margin-top: 0px">
+                    <video
+                      width="100%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="border-radius: 20px"
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/Connect+to+apps.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- features-container mobile version -->
+    <div class="features-container" id="overview-mobile">
+      <h2
+        style="
+          color: #fcfaf2;
+          font-family: Oswald;
+          font-size: 28px;
+          padding-top: 40px;
+          padding-left: 25px;
+        "
+      >
+        FEATURE HIGHLIGHT
+      </h2>
+
+      <div
+        id="carouselfeatures"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="content-container-mobile">
+              <div class="row">
+                <div class="col-7">
+                  <h2
+                    style="
+                      font-size: 10px;
+                      font-family: Oswald;
+                      padding-top: 41px;
+                      padding-left: 28px;
+                    "
+                  >
+                    HEALTH AND WELLNESS INSIGHTS
+                  </h2>
+                  <p
+                    style="
+                      font-size: 8px;
+                      font-family: Roboto;
+                      padding-left: 28px;
+                    "
+                  >
+                    Gain a deeper understanding of your physique with our health
+                    and wellness insights. Track your fitness progress, monitor
+                    your vital signs, and receive recommendations catered for
+                    your body type. Take control of your body, take control of
+                    your health.
+                  </p>
+                </div>
+                <div class="col-5">
+                  <div class="gif-mobile">
+                    <video
+                      width="110%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="border-radius: 6px"
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/health-and-wellness-insights.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-container-mobile">
+              <div class="row">
+                <div class="col-7">
+                  <h2
+                    style="
+                      font-size: 10px;
+                      font-family: Oswald;
+                      padding-top: 41px;
+                      padding-left: 28px;
+                    "
+                  >
+                    14-DAY BATTERY LIFE
+                  </h2>
+                  <p
+                    style="
+                      font-size: 8px;
+                      font-family: Roboto;
+                      padding-left: 28px;
+                    "
+                  >
+                    Stay active with a peace of mind. Our long-lasting battery
+                    life promise you uninterrupted sessions of training. Keep
+                    going without the worry of constant charging.
+                  </p>
+                </div>
+                <div class="col-5">
+                  <div class="gif-mobile" style="margin-left: 4px">
+                    <video
+                      width="110%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                      "
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/alldaybattery.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-container-mobile">
+              <div class="row">
+                <div class="col-7">
+                  <h2
+                    style="
+                      font-size: 10px;
+                      font-family: Oswald;
+                      padding-top: 41px;
+                      padding-left: 28px;
+                    "
+                  >
+                    ADVANCED FITNESS FEATURES
+                  </h2>
+                  <p
+                    style="
+                      font-size: 8px;
+                      font-family: Roboto;
+                      padding-left: 28px;
+                    "
+                  >
+                    Highly accurate and detailed data allows for a better
+                    workout plan catered for your body and needs. Access our
+                    comprehensive health and performance metrics and up your
+                    fitness game.
+                  </p>
+                </div>
+                <div class="col-5">
+                  <div class="gif-mobile" style="margin-left: 4px">
+                    <video
+                      width="110%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                      "
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/sports.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-container-mobile">
+              <div class="row">
+                <div class="col-7">
+                  <h2
+                    style="
+                      font-size: 10px;
+                      font-family: Oswald;
+                      padding-top: 41px;
+                      padding-left: 28px;
+                    "
+                  >
+                    BRIGHT DISPLAY
+                  </h2>
+                  <p
+                    style="
+                      font-size: 8px;
+                      font-family: Roboto;
+                      padding-left: 28px;
+                    "
+                  >
+                    Get information at one glance. Whether you are working out
+                    on a sunny day or at night, our screen ensures effortless
+                    readability at all times. Say goodbye to straining your eyes
+                    now!
+                  </p>
+                </div>
+                <div class="col-5">
+                  <div class="gif-mobile" style="margin-left: 4px">
+                    <video
+                      width="110%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                      "
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/bright-display.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-container-mobile">
+              <div class="row">
+                <div class="col-7">
+                  <h2
+                    style="
+                      font-size: 10px;
+                      font-family: Oswald;
+                      padding-top: 41px;
+                      padding-left: 28px;
+                    "
+                  >
+                    WORKS WITH IPHONE AND ANDROID
+                  </h2>
+                  <p
+                    style="
+                      font-size: 8px;
+                      font-family: Roboto;
+                      padding-left: 28px;
+                    "
+                  >
+                    Seamless integration with both IOS and Android ecosystem.
+                    Increased productivity and user experience to meet your
+                    expectations. Control your device at your fingertips.
+                  </p>
+                </div>
+                <div class="col-5">
+                  <div class="gif-mobile" style="margin-left: 4px">
+                    <video
+                      width="110%"
+                      height="100%"
+                      autoplay
+                      muted
+                      loop
+                      style="
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                      "
+                    >
+                      <source
+                        src="https://cs2024garmin.s3.ap-southeast-1.amazonaws.com/Connect+to+apps.mov"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselfeatures"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="fas fa-chevron-left"
+            aria-hidden="true"
+            style="color: brown; margin-left: 18px"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselfeatures"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            class="fas fa-chevron-right"
+            aria-hidden="true"
+            style="color: brown; margin-right: 10px"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- built-in-app carousel desktop ver -->
+    <div class="built-in-app-container" id="overview-desktop">
+      <h2 class="header-text" style="padding-left: 44px; padding-top: 32px">
+        BUILT IN APPS
+      </h2>
+      <div
+        id="carouselApp"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="content-container">
+              <img
+                src="./images/learn more/body-battery.webp"
+                alt="body-battery"
+                style="margin: 87px auto 79px 240px"
+              />
+              <div class="content-subheader">
+                <h2>BODY BATTERY ENERGY MONITORING</h2>
+                <p
+                  style="
+                    color: #fcfaf2;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    padding-top: 24px;
+                  "
+                >
+                  Body Battery is a measure of your overall energy<br />
+                  level. Monitoring it allows you to understand your <br />
+                  level of exhaustion, stress, and general well-being. <br />
+                  Know when to take breaks and avoid burnouts.<br />
+                  Stay charged, feel your best everyday.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-container">
+              <img
+                src="./images/learn more/Sleep-coach.webp"
+                alt="body-battery"
+                style="margin: 87px auto 79px 240px"
+              />
+              <div class="content-subheader">
+                <h2>SLEEP COACH</h2>
+                <p
+                  style="
+                    color: #fcfaf2;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    padding-top: 24px;
+                    padding-right: 191px;
+                  "
+                >
+                  Sleep Coach is your personal assistant who watch your<br />
+                  sleep patterns and offers insights to better regulate your
+                  <br />
+                  sleep. Improve your rests now and maintain high spirit all<br />
+                  day long.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-container">
+              <img
+                src="./images/learn more/Morning-report.webp"
+                alt="body-battery"
+                style="margin: 87px auto 79px 240px"
+              />
+              <div class="content-subheader">
+                <h2>MORNING REPORT</h2>
+                <p
+                  style="
+                    color: #fcfaf2;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    padding-top: 24px;
+                    padding-right: 191px;
+                  "
+                >
+                  Review your sleep, daily activities, HRV status and more<br />
+                  everyday as soon as you wake up. Align your plans with <br />
+                  your body needs to achieve peak performance and well-<br />
+                  being. Start your day right with with a holistic snapshot of
+                  <br />
+                  your body status.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselApp"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselApp"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <h2 class="header-text" style="padding-left: 44px; padding-top: 30px">
+        GLOBAL AMBASSADOR
+      </h2>
+    </div>
+    <!-- built-in-app carousel mobile ver -->
+    <div class="built-in-app-container-mobile" id="overview-mobile">
+      <h2
+        style="
+          color: #032e3f;
+          font-family: Oswald;
+          font-size: 28px;
+          padding-top: 15px;
+          padding-left: 25px;
+        "
+      >
+        BUILT IN APPS
+      </h2>
+      <div
+        id="carouselApp-mobile"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="content-container-mobile">
+              <img
+                src="./images/learn more/body-battery.webp"
+                alt="body-battery"
+                style="margin: 38px 74px auto 74px; width: 88px; height: auto"
+              />
+              <div class="content-subheader-mobile">
+                <h2>BODY BATTERY ENERGY MONITORING</h2>
+                <p
+                  style="
+                    color: #fcfaf2;
+                    font-family: Roboto;
+                    font-size: 8px;
+                    padding-top: 12px;
+                    padding-left: 35px;
+                  "
+                >
+                  Body Battery is a measure of your overall energy<br />
+                  level. Monitoring it allows you to understand your <br />
+                  level of exhaustion, stress, and general well-being. <br />
+                  Know when to take breaks and avoid burnouts.<br />
+                  Stay charged, feel your best everyday.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="content-container-mobile">
+              <img
+                src="./images/learn more/Sleep-coach.webp"
+                alt="body-battery"
+                style="margin: 38px 74px auto 74px; width: 88px; height: auto"
+              />
+              <div class="content-subheader-mobile">
+                <h2 style="margin-left: 88px">SLEEP COACH</h2>
+                <p
+                  style="
+                    color: #fcfaf2;
+                    font-family: Roboto;
+                    font-size: 8px;
+                    padding-top: 12px;
+                    padding-left: 38px;
+                  "
+                >
+                  Sleep Coach is your personal assistant who <br />
+                  watch your sleep patterns and offers insights <br />
+                  to better regulate your sleep. Improve your rests <br />
+                  now and maintain high spirit all day long.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="content-container-mobile">
+              <img
+                src="./images/learn more/Morning-report.webp"
+                alt="body-battery"
+                style="margin: 38px 74px auto 74px; width: 88px; height: auto"
+              />
+              <div class="content-subheader-mobile">
+                <h2 style="margin-left: 78px">MORNING REPORT</h2>
+                <p
+                  style="
+                    color: #fcfaf2;
+                    font-family: Roboto;
+                    font-size: 8px;
+                    padding-top: 12px;
+                    padding-left: 38px;
+                  "
+                >
+                  Review your sleep, daily activities, HRV status <br />
+                  and more everyday as soon as you wake up. Align <br />
+                  your plans with your body needs to achieve peak <br />
+                  performance and well-being. Start your day right <br />
+                  with with a holistic snapshot of your body status.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselApp-mobile"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="fas fa-chevron-left"
+            aria-hidden="true"
+            style="margin-left: 120px"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselApp-mobile"
+          role="button"
+          data-bs-slide="next"
+          style="padding-right: 90px"
+        >
+          <span class="fas fa-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <h2
+        class="header-text-mobile"
+        style="padding-left: 25px; padding-top: 15px"
+      >
+        GLOBAL AMBASSADOR
+      </h2>
+    </div>
+    <!-- jackson-wang -->
+    <div style="position: relative">
+      <img
+        src="./images/learn more/Jackson-wang.webp"
+        alt="jason-wang"
+        style="width: 100%"
+        id="ambassador-mobile"
+      />
+      <div
+        style="position: absolute; top: 55px; padding-left: 20px"
+        id="ambassador-header"
+      >
+        <h2>VENU 3</h2>
+        <p><i>KNOW THE REAL YOU</i></p>
+      </div>
+    </div>
+    <!-- call-to-action container -->
+    <div class="buy-now-container" id="overview-desktop">
+      <h2 style="padding-top: 32px; text-align: center; font-size: 64px">
+        TRACK, THRIVE, TRANSFORM
+      </h2>
+      <div class="fade-up">
+        <p style="padding: 32px 5%; margin-bottom: 0px; text-align: center">
+          Change your lifestyle with VENU 3. Start your journey today.
+        </p>
+      </div>
+      <div class="buynow-container">
+        <a href="purchase.html">
+          <button class="buynow-button">BUY NOW</button>
+        </a>
+      </div>
+    </div>
+    <div class="buy-now-container-mobile" id="overview-mobile">
+      <h2 style="padding-top: 32px; text-align: center; font-size: 32px">
+        TRACK, THRIVE, TRANSFORM
+      </h2>
+      <p style="padding-top: 32px; text-align: center">
+        Change your lifestyle with VENU 3. Start your journey today.
+      </p>
+      <div class="buynow-container">
+        <a href="purchase.html">
+          <button class="buynow-button-mobile">BUY NOW</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="container-footer-fluid"
+      style="background-color: #032e3f; height: auto; padding: 20px 5%"
+    >
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-item">
+          <h3 class="footer-h3-font">Contact</h3>
+          <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">+65 6709 4220</a>
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">service.sg@garmin.com</a>
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Follow Us</h3>
+          <p style="padding-top: 20px; font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Facebook.svg" alt="facebook" />
+            <span style="padding-left: 0.89vw">Facebook</span>
+          </p>
+          <p style="font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Instagram.svg" alt="instagram" />
+            <span style="padding-left: 0.89vw">Instagram</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">Subscribe to our Newsletter</h3>
+          <p class="footer-p-font">
+            Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+            <div class="input-subscribe-container">
+              <input type="text" placeholder="Email" />
+              <button class="email-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p
+            style="
+              font-family: Roboto;
+              font-size: 13px;
+              color: #fcfaf2;
+              text-align: center;
+            "
+          >
+            <br />
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- scrolling animation -->
+    <script src="scrolling-animation.js"></script>
+  </body>
+</html>

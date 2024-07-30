@@ -1,0 +1,10 @@
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="AMOLED_Display" clip-path="url(#clip0_122_250)">
+<path id="Vector" d="M1.65186 32H8.94786M10.3559 9.85601L15.6039 15.104M10.3559 54.144L15.6039 48.896M32.4999 63.36V55.936M63.3479 32H56.0519M54.6439 54.144L49.3959 48.896M54.6439 9.85601L49.3959 15.104M32.4999 0.640015V8.06401M32.4999 49.28C42.0999 49.28 49.7799 41.472 49.7799 32C49.7799 22.528 42.0999 14.72 32.4999 14.72C22.8999 14.72 15.0919 22.4 15.0919 32C15.0919 41.6 22.8999 49.28 32.4999 49.28Z" stroke="#FCFAF2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_122_250">
+<rect width="64" height="64" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>

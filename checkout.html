@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Checkout - Garmin ">
+    <meta name="description" content="Securely complete your purchase at Garmin. Checkout hassle-free and explore our range of cutting-edge products">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fade in animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+    <style>
+      .left-side {
+        margin: 44px 0px;
+        width: 70vw;
+      }
+      .right-side {
+        margin: 44px 0px;
+        padding-left: 24px;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        --bs-table-bg: #fff;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Roboto", sans-serif;
+        color: #032e3f;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+      .cart-card label {
+        font-size: 16px;
+        font-weight: 500;
+        color: #032e3f;
+        display: block;
+      }
+      .cart-card input {
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 16px;
+      }
+    </style>
+    <title>Checkout - Garmin Venu 3</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MR8512556E');
+  </script>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex" >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"  style="margin-right: 0;">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px"/>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="flex-grow: 0;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"><img src="./svg/search.svg" alt="search" width="23px" style="margin: 0px 5px;"/></a>
+          <a href="cart.html"><img src="./svg/Cart.svg" alt="cart" width="25px" style="margin: 0px 5px;"/></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Promotion stuff banner -->
+
+    <div class="promotion-banner">
+      <div class="m-scroll">
+        <div class="primary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+        <div class="secondary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- body -->
+    <div class="container-fluid row" style="padding: 20px 5%; min-height: 90vh; height: 100%; display: flex; align-items: flex-start;">
+      <small style="display: flex; align-self: flex-start;">
+        <p style="display: inline; margin-bottom: 0;">&lt;&nbsp;</p>
+        <a href="cart.html" style="color: #032e3f;">Back</a>
+      </small>
+      <div style="display:flex; flex-direction: column;">
+        <h3 style="padding: 10px;">
+          <img src="svg/Secure.svg" alt="secure" height="24px" style="vertical-align: top; margin-top: 2px;">
+          Secure Checkout
+        </h3>
+        <div class="row">
+          <div class="col-lg-8 p-2" id="cart-desktop">
+            <div class="cart-card">
+              <h3>Delivery Info</h3>
+              <div class="row">
+                <div class="col-md-6 p-2">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="">
+                </div>
+                <div class="col-6 col-md-6 p-2">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="">
+                </div>
+                <div class="col-6 col-md-6 p-2">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="address">Street Address 1</label>
+                  <input type="text" id="address" name="address" placeholder="">
+                </div>
+                <div class="col-md-6 p-2">
+                  <label for="address2">Street Address 2</label>
+                  <input type="text" id="address2" name="address2" placeholder="">
+                </div>
+                <div class="col-5 col-md-6 p-2">
+                  <label for="country">Country</label>
+                  <input type="text" id="country" name="country" placeholder="" 
+                  value="Singapore" style="text-align: center;" disabled>
+                </div>
+                <div class="col-7 col-md-6 p-2">
+                  <label for="postal">Postal Code</label>
+                  <input type="text" id="postal" name="postal" placeholder="">
+                </div>
+                <div class="col-12 p-2">
+                  <input type="checkbox" id="auto-fill" style="height: initial; width: initial; ">
+                  <label for="auto-fill" style="display: initial; font-weight: 300;"><small> Same as billing address</small></label>
+                </div>
+                <div class="col-12 px-2 py-0">
+                  <!-- pdpa disclaimer -->
+                  <input type="checkbox" name="pdpa-ack" id="pdpa-ack" style="height: initial; width: initial;">
+                  <label style="display: initial; font-weight: 300;" for="pdpa-ack"><small>
+                    By submitting this form, you acknowledge and agree to our
+                    <a href="pdpa.html" target="_blank">data protection policy</a>.
+                  </small></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-2">
+            <div class="cart-card">
+              <h3>Your Order</h3>
+              <div style="padding: 6px"></div>
+  
+              <table class="table">
+                <tr>
+                  <td><strong>Item</strong></td>
+                  <td style="text-align: right;"><strong>Subtotal</strong></td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: none;">Venu 3</td>
+                  <td style="border-bottom: none; text-align: right;">$699</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: none;">Venu 3</td>
+                  <td style="border-bottom: none; text-align: right;">$699</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: none;">Promotion</td>
+                  <td style="border-bottom: none; text-align: right;">-$349.50</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: none;">Shipping</td>
+                  <td style="border-bottom: none; text-align: right;">FREE</td>
+                </tr>
+                <tr><td style="padding: 4px; border-bottom: none;"></td></tr>
+                <tr>
+                  <td><strong>Subtotal</strong></td>
+                  <td style="text-align: right;"><strong>$1048.50</strong></td>
+                </tr>
+                <tr>
+                  <td>8% GST incl.</td>
+                  <td style="text-align: right;">$83.88</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: none;"><strong>Total</strong></td>
+                  <td style="border-bottom: none; text-align: right;"><strong>$1048.50</strong></td>
+                </tr>
+                <!-- <tr>
+                  <td colspan="2" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="images/stripe-badge-transparent 1.png" alt="" width="100%" style="max-width: 400px;">
+                  </td>
+                </tr> -->
+              </table>
+              <div style="width: 100%; display: flex; justify-content: center;">
+                <img src="images/checkout/stripe-badge-transparent.png" alt="payment methods" width="100%" style="max-width: 450px;">
+              </div>
+              <a href="payment.html" style="width: 100%;">
+                <button class="orange-button">
+                  <img src="svg/ion_card-outline.svg" alt="card" height="24px" style="vertical-align: top; margin-top: 2px;">
+                  Pay with card
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="container-footer-fluid" style="background-color: #032e3f; height: auto; padding: 20px 5%;">
+      <div class="row">
+        <div
+        class="col-12 col-md-6 col-lg-3 footer-item">
+            <h3 class="footer-h3-font">Contact</h3>
+            <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma
+            Atria, Singapore 238877
+            <br>
+            <br>
+            <a href="#" style="color:#FCFAF2">+65 6709 4220</a>  
+            <br>
+            <br>
+            <a href="#" style="color:#FCFAF2">service.sg@garmin.com</a> 
+            </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+                <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+                <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 footer-item">
+              <h3 class="footer-h3-font">
+                  Follow Us
+              </h3>
+              <p style="padding-top:20px; font-size:16px; color:#FCFAF2">
+              <img src="./svg/Facebook.svg" alt="facebook">
+              <span style="padding-left: 0.89vw;">Facebook</span>
+              </p>
+              <p style="font-size: 16px; color:#FCFAF2">
+                  <img src="./svg/Instagram.svg" alt="instagram">
+                  <span style="padding-left: 0.89vw;">Instagram</span>
+              </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">
+              Subscribe to our Newsletter
+          </h3>
+          <p class="footer-p-font">
+              Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+              <div class="input-subscribe-container">
+                  <input type="text" placeholder="Email">
+                  <button class="email-button">Subscribe</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p style=
+            "font-family: Roboto; font-size: 13px; color: #FCFAF2;
+            text-align: center;">
+            <br/>
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <!-- bootstrap script -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <!-- script for animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const productImages = document.querySelectorAll(".product-image");
+  
+      productImages.forEach(function(image) {
+        image.addEventListener("click", function() {
+          // Remove the 'selected' class from all images
+          productImages.forEach(function(img) {
+            img.classList.remove("selected");
+          });
+  
+          // Add the 'selected' class to the clicked image
+          this.classList.add("selected");
+        });
+      });
+    });
+  </script>
+  </body>
+</html>

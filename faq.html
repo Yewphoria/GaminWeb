@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="FAQ - Garmin" />
+    <meta
+      name="description"
+      content="Find answers to commonly asked questions at Garmin. Explore our FAQ section for comprehensive information on products, services, and support."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fade in animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>FAQ | Garmin</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MR8512556E");
+  </script>
+  <!-- styling  -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+    :root {
+      --white: #fcfaf2;
+      --background: #032e3f;
+      --background-hover: #fcfaf2;
+      --primary-blue: #e36339;
+      --blue-gray: #fcfaf2;
+      --black: #032e3f;
+    }
+
+    html {
+      font-size: 16px;
+      font-family: "roboto";
+    }
+
+    body {
+      height: 100%;
+      background-color: var(--blue-gray);
+      font-family: "roboto";
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .faq-container {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      /* margin-top: 12em; */
+      max-width: 600px;
+      padding: 2em;
+      border-radius: 12px;
+      background-color: var(--background);
+    }
+
+    details {
+      font-size: 1rem;
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 8px;
+      position: relative;
+      max-width: 600px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    details:hover {
+      background-color: var(--background-hover);
+    }
+
+    details:hover svg {
+      stroke: var(--primary-blue);
+    }
+
+    details[open] {
+      background-color: var(--background-hover);
+    }
+
+    details[open] .faq-title {
+      color: var(--primary-blue);
+    }
+
+    summary {
+      user-select: none;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      list-style: none;
+      padding: 1em;
+      align-items: center;
+    }
+
+    summary svg {
+      stroke: var(--white);
+    }
+
+    details[open] summary svg {
+      stroke: var(--primary-blue);
+      transform: rotate(90deg);
+    }
+
+    summary:hover .faq-title {
+      color: var(--primary-blue);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:focus {
+      outline: none;
+    }
+
+    .faq-title {
+      color: var(--white);
+      width: 90%;
+      transition: all 250ms ease-in-out;
+      font-size: 18px;
+    }
+
+    .faq-content {
+      color: var(--black);
+      padding: 0.2em 1em 1em 1em;
+      font-weight: 400;
+      line-height: 1.5;
+      /* font-weight: lighter; */
+    }
+
+    .expand-icon {
+      pointer-events: none;
+      position: absolute;
+      right: 1em;
+      transition: all 150ms ease-out;
+    }
+  </style>
+  <body>
+    <!-- Nav bar (Header div) -->
+    <!-- testing navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="margin-right: 0">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px" />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="flex-grow: 0"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="./svg/search.svg"
+              alt="search"
+              width="23px"
+              style="margin: 0px 5px"
+          /></a>
+          <a href="cart.html"
+            ><img
+              src="./svg/Cart.svg"
+              alt="cart"
+              width="25px"
+              style="margin: 0px 5px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Promotion stuff banner -->
+
+    <div class="promotion-banner">
+      <div class="m-scroll">
+        <div class="primary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+        <div class="secondary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- body -->
+
+    <div class="main">
+      <div class="headers">
+        <h1>FAQ</h1>
+      </div>
+
+      <div class="faq-container">
+        <details>
+          <summary>
+            <span class="faq-title"> What are Garmin's shipping options?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Garmin offers express free shipping for all orders.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">
+              How long does delivery take for Garmin products?
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Delivery times for Garmin products depend on your location and
+            product availability. You'll receive an estimated delivery date
+            during the checkout process.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >Can I change my delivery address or modify/cancel my order if it
+              hasn't shipped yet?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Yes, you can modify/cancel your order or change the delivery address
+            if the order hasn't shipped. Contact customer support promptly to
+            make changes.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >How do I track my Garmin order and check its delivery
+              status?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            To track your order, use the provided tracking number in the email
+            sent after the purchase.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">What is Garmin's return policy?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Garmin has a 14-days return policy for products in their original
+            condition, unused, and with all original tags and packaging.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">How do I return my Garmin order?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Changes can be made before shipping. Please contact our customer
+            support for assistance.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >When will I receive my refund for a returned Garmin
+              product?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Refunds are processed as soon as possible, with the timeframe
+            typically ranging from 1 to 2 weeks. The exact duration depends on
+            your bank's processing times.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >How do I find the right size and fit for Garmin products?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Garmin provides sizing guides and product specifications on its
+            website to help you choose the right size and fit for your needs.
+            Refer to sizing charts before making a purchase.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title">Do Garmin watches have a warranty?</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            Yes, Garmin watches come with a 1-year warranty that covers
+            manufacturing defects and non-human caused damages. Refer to our
+            warranty policy for specific details.
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="faq-title"
+              >What do I do if my questions isn't covered here?</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="expand-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9 6l6 6l-6 6"></path>
+            </svg>
+          </summary>
+          <div class="faq-content">
+            If your question isn't addressed in our FAQs, please reach out to
+            our <a href="contact-us.html">customer support team </a>.
+            Alternatively, you can visit a
+            <a href="our-stores">Garmin store</a> for in-person assistance and
+            personalized service.
+          </div>
+        </details>
+      </div>
+    </div>
+    <!-- footer -->
+    <div
+      class="container-footer-fluid"
+      style="background-color: #032e3f; height: auto; padding: 20px 5%"
+    >
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-item">
+          <h3 class="footer-h3-font">Contact</h3>
+          <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">+65 6709 4220</a>
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">service.sg@garmin.com</a>
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Follow Us</h3>
+          <p style="padding-top: 20px; font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Facebook.svg" alt="facebook" />
+            <span style="padding-left: 0.89vw">Facebook</span>
+          </p>
+          <p style="font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Instagram.svg" alt="instagram" />
+            <span style="padding-left: 0.89vw">Instagram</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">Subscribe to our Newsletter</h3>
+          <p class="footer-p-font">
+            Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+            <div class="input-subscribe-container">
+              <input type="text" placeholder="Email" />
+              <button class="email-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p
+            style="
+              font-family: Roboto;
+              font-size: 13px;
+              color: #fcfaf2;
+              text-align: center;
+            "
+          >
+            <br />
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap script -->
+    <script>
+      class Accordion {
+        constructor(el) {
+          this.el = el;
+          this.summary = el.querySelector("summary");
+          this.content = el.querySelector(".faq-content");
+          this.expandIcon = this.summary.querySelector(".expand-icon");
+          this.animation = null;
+          this.isClosing = false;
+          this.isExpanding = false;
+          this.summary.addEventListener("click", (e) => this.onClick(e));
+        }
+
+        onClick(e) {
+          e.preventDefault();
+          this.el.style.overflow = "hidden";
+
+          if (this.isClosing || !this.el.open) {
+            this.open();
+          } else if (this.isExpanding || this.el.open) {
+            this.shrink();
+          }
+        }
+
+        shrink() {
+          this.isClosing = true;
+
+          const startHeight = `${this.el.offsetHeight}px`;
+          const endHeight = `${this.summary.offsetHeight}px`;
+
+          if (this.animation) {
+            this.animation.cancel();
+          }
+
+          this.animation = this.el.animate(
+            {
+              height: [startHeight, endHeight],
+            },
+            {
+              duration: 200,
+              easing: "ease-out",
+            }
+          );
+
+          this.animation.onfinish = () => {
+            this.expandIcon.setAttribute("src", "assets/plus.svg");
+            return this.onAnimationFinish(false);
+          };
+          this.animation.oncancel = () => {
+            this.expandIcon.setAttribute("src", "assets/plus.svg");
+            return (this.isClosing = false);
+          };
+        }
+
+        open() {
+          this.el.style.height = `${this.el.offsetHeight}px`;
+          this.el.open = true;
+          window.requestAnimationFrame(() => this.expand());
+        }
+
+        expand() {
+          this.isExpanding = true;
+
+          const startHeight = `${this.el.offsetHeight}px`;
+          const endHeight = `${
+            this.summary.offsetHeight + this.content.offsetHeight
+          }px`;
+
+          if (this.animation) {
+            this.animation.cancel();
+          }
+
+          this.animation = this.el.animate(
+            {
+              height: [startHeight, endHeight],
+            },
+            {
+              duration: 200,
+              easing: "ease-out",
+            }
+          );
+
+          this.animation.onfinish = () => {
+            this.expandIcon.setAttribute("src", "assets/minus.svg");
+            return this.onAnimationFinish(true);
+          };
+          this.animation.oncancel = () => {
+            this.expandIcon.setAttribute("src", "assets/minus.svg");
+            return (this.isExpanding = false);
+          };
+        }
+
+        onAnimationFinish(open) {
+          this.el.open = open;
+          this.animation = null;
+          this.isClosing = false;
+          this.isExpanding = false;
+          this.el.style.height = this.el.style.overflow = "";
+        }
+      }
+
+      document.querySelectorAll("details").forEach((el) => {
+        new Accordion(el);
+      });
+    </script>
+  </body>
+</html>

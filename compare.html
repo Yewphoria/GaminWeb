@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Compare VENU 3 - Garmin " />
+    <meta
+      name="description"
+      content="Discover the newest launch from Garmin, the VENU 3 WATCH. VENU 3 is a cutting-edge smartwatch packed with advanced features. From fitness tracking to health monitoring, explore the Venu 3's sleek design and performance capabilities. Start your active lifestyle with Garmin technology."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CDN for fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- styling css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+    <link rel="icon" type="images/favicon.ico" href="./images/favicon.ico" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Compare VENU 3 | Garmin</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MR8512556E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MR8512556E");
+  </script>
+  <!-- styling  -->
+  <style>
+    .background-container {
+      background: #fcfaf2;
+    }
+
+    .background-container-mobile {
+      height: 2100px;
+      width: auto;
+      background: #fcfaf2;
+    }
+
+    .image-container-background {
+      width: 100%;
+      height: 284px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 36px auto 0 auto;
+      width: 581px;
+      height: 284px;
+    }
+    .image-container-mobile {
+      justify-content: center;
+      align-items: center;
+      margin: 36px auto 0 70px;
+      width: auto;
+      height: auto;
+    }
+
+    .text-container-background {
+      width: 100%;
+      height: 80px;
+    }
+
+    .text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 32px auto;
+      width: 581px;
+      height: 47px;
+    }
+    .text-container-mobile {
+      justify-content: center;
+      align-items: center;
+      margin: 32px auto 0 160px;
+      width: auto;
+      height: 47px;
+    }
+
+    .table-container-background {
+      width: 100%;
+      height: 964px;
+    }
+    .table-container {
+      margin: 10px auto;
+    }
+
+    .table-head-text {
+      margin-bottom: 24px;
+      color: black;
+      /* text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25); */
+      font-family: Oswald;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .table-container-mobile {
+      width: 90%;
+      height: 480px;
+      margin: 10px auto;
+    }
+
+    hr.line {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    .responsive-table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table-row {
+      display: table-row;
+    }
+
+    /* Simulating columns with divs */
+    .table-cell {
+      display: table-cell;
+      padding-bottom: 12px;
+      font-family: "Roboto";
+      font-size: 16px;
+      color: #686868;
+
+      /* Adjust the padding as needed */
+    }
+
+    /* Adjust padding for the 2nd column */
+    .second-column {
+      padding-left: 15px;
+      text-align: center;
+    }
+
+    /* Adjust padding for the 3rd column */
+    .third-column {
+      padding-right: 50px;
+      text-align: center;
+    }
+
+    /* responsive screen styling */
+    /* for Desktop version  */
+    @media only screen and (min-width: 768px) {
+      #compare-desktop {
+        display: block;
+      }
+
+      #compare-mobile {
+        display: none;
+      }
+    }
+
+    /* For mobile version */
+    @media only screen and (max-width: 768px) {
+      #compare-desktop {
+        display: none;
+      }
+      #compare-mobile {
+        display: block;
+        overflow-x: clip;
+      }
+    }
+  </style>
+  <body>
+    <!-- Nav bar (Header div) -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid justify-content-between d-flex">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style="margin-right: 0">
+          <img src="./images/Garmin-logo.png" alt="GARMIN" width="128px" />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+          style="flex-grow: 0"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="purchase.html">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="our-stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="#"
+            ><img
+              src="./svg/search.svg"
+              alt="search"
+              width="23px"
+              style="margin: 0px 5px"
+          /></a>
+          <a href="cart.html"
+            ><img
+              src="./svg/Cart.svg"
+              alt="cart"
+              width="25px"
+              style="margin: 0px 5px"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Promotion stuff banner -->
+
+    <div class="promotion-banner">
+      <div class="m-scroll">
+        <div class="primary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+        <div class="secondary">
+          <span>
+            <p style="display: inline;">
+              <img src="images/run.webp" alt="run" height="22px">
+              CELEBRATE LOVE WITH OUR EXCLUSIVE VALENTINE'S DAY OFFER!
+              <img src="images/run.webp" alt="run" height="22px">
+              ENJOY A 20% DISCOUNT ON COUPLES BUNDLES PLUS FREE NEXT-DAY
+              DELIVERY FOR EVERY ORDER 
+              <img src="images/run.webp" alt="run" height="22px">
+              SAVE AN EXTRA 20% ON YOUR PURCHASE
+              OF 2 ITEMS OR MORE 
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second nav bar  Venu 3 desktop version -->
+    <div
+      class="container-2nd-navbar"
+      style="position: sticky; top: 0; z-index: 2; opacity: 1"
+      id="compare-desktop"
+    >
+      <div class="row d-flex justify-content-between">
+        <div class="col-10">
+          <div class="d-flex">
+            <div>
+              <h3 class="second-navbar-h3-font">VENU 3</h3>
+            </div>
+            <div>
+              <ul class="nav second-navbar-overview" style="margin-top: 10px">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="overview.html"
+                    >OVERVIEW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="Specs.html"
+                    style="margin-left: -20px"
+                    >SPECS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="compare.html"
+                    style="margin-left: -20px"
+                    >COMPARE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-end">
+          <a href="purchase.html">
+            <button class="buy-now-button">BUY NOW</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Second nav bar  Venu 3 mobile version -->
+    <div
+      class="container-2nd-navbar"
+      style="position: sticky; top: 0; opacity: 1; z-index: 2"
+      id="compare-mobile"
+    >
+      <div class="row">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-3">
+              <h3
+                class="second-navbar-h3-font"
+                style="
+                  font-size: 17px;
+                  padding-left: 10px;
+                  padding-top: 18px;
+                  padding-bottom: 0px;
+                "
+              >
+                VENU 3
+              </h3>
+            </div>
+            <div class="col-9">
+              <ul
+                class="nav second-navbar-overview"
+                style="margin-top: 12px; margin-left: -32px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="overview.html"
+                    >OVERVIEW</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="Specs.html"
+                    style="margin-left: -20px"
+                    >SPECS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="compare.html"
+                    style="margin-left: -20px"
+                    >COMPARE</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 justify-content-end">
+          <a href="purchase.html">
+            <button
+              class="buy-now-button"
+              style="margin-top: 11px; margin-left: -28px"
+            >
+              BUY NOW
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="background-container main" id="compare-desktop">
+      <div class="headers">
+        <h1>COMPARE</h1>
+      </div>
+
+      <div class="responsive-table">
+        <div class="table-row">
+          <div class="table-cell"></div>
+          <div class="table-cell second-column">
+            <img
+              src="./images/compare/Venu-3-compare.png"
+              alt="Venu 3"
+              width="234px"
+              height="auto"
+              style="padding-bottom: 24px"
+            />
+            <h2 class="table-head-text">VENU 3</h2>
+          </div>
+          <div class="table-cell third-column">
+            <img
+              src="./images/compare/Venu-2-compare.png"
+              alt="Venu 3"
+              width="234px"
+              height="auto"
+              style="padding-bottom: 24px"
+            />
+            <h2 class="table-head-text">VENU 2</h2>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Dimensions</div>
+          <div class="table-cell second-column">45.4 x 45.4 x 12.2mm</div>
+          <div class="table-cell third-column">45 x 45 x 12mm</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Weight</div>
+          <div class="table-cell second-column">47g</div>
+          <div class="table-cell third-column">49g</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Screen Resolution</div>
+          <div class="table-cell second-column">454 x 454 pixels</div>
+          <div class="table-cell third-column">416 x 416 pixels</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Runtime</div>
+          <div class="table-cell second-column">14 days</div>
+          <div class="table-cell third-column">11 days</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Memory/History</div>
+          <div class="table-cell second-column">8 GB</div>
+          <div class="table-cell third-column">8 GB</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">GPS</div>
+          <div class="table-cell second-column">Yes</div>
+          <div class="table-cell third-column">Yes</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            Built-in Speaker<br />
+            and Microphone
+          </div>
+          <div class="table-cell second-column">Yes</div>
+          <div class="table-cell third-column">No</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Body Battery</div>
+          <div class="table-cell second-column">Yes</div>
+          <div class="table-cell third-column">Yes</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Advanced Sleep Monitoring</div>
+          <div class="table-cell second-column">Yes</div>
+          <div class="table-cell third-column">Yes</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Nap Detection</div>
+          <div class="table-cell second-column">Yes</div>
+          <div class="table-cell third-column">No</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Mediation</div>
+          <div class="table-cell second-column">Yes</div>
+          <div class="table-cell third-column">No</div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">Wheelchair Mode</div>
+          <div class="table-cell second-column">Yes</div>
+          <div class="table-cell third-column">No</div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile version -->
+    <div class="background-container-mobile main" id="compare-mobile">
+      <div class="headers">
+        <h1>COMPARE</h1>
+      </div>
+      <div class="image-container-mobile">
+        <img
+          src="./images/compare/Venu-3-compare.png"
+          alt="Venu 3"
+          width="auto"
+          height="auto"
+        />
+      </div>
+      <div class="text-container-mobile">
+        <h2 style="color: black; font-size: 24px; font-weight: 500">VENU 3</h2>
+      </div>
+      <div class="table-container-mobile">
+        <div class="responsive-table">
+          <div class="table-row">
+            <div class="table-cell">Dimensions</div>
+            <div class="table-cell second-column">45.4 x 45.4 x 12.2mm</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Weight</div>
+            <div class="table-cell second-column">47g</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Screen Resolution</div>
+            <div class="table-cell second-column">454 x 454 pixels</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Runtime</div>
+            <div class="table-cell second-column">14 days</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Memory/History</div>
+            <div class="table-cell second-column">8 GB</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">GPS</div>
+            <div class="table-cell second-column">Yes</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">
+              Built-in Speaker<br />
+              and Microphone
+            </div>
+            <div class="table-cell second-column">Yes</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Body Battery</div>
+            <div class="table-cell second-column">Yes</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Advanced Sleep Monitoring</div>
+            <div class="table-cell second-column">Yes</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Nap Detection</div>
+            <div class="table-cell second-column">Yes</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Mediation</div>
+            <div class="table-cell second-column">Yes</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Wheelchair Mode</div>
+            <div class="table-cell second-column">Yes</div>
+          </div>
+        </div>
+        <hr class="line" />
+      </div>
+      <div class="image-container-background" style="margin-top: 120px">
+        <div class="image-container-mobile">
+          <img
+            src="./images/compare/Venu-2-compare.png"
+            alt="Venu 3"
+            width="auto"
+            height="auto"
+          />
+        </div>
+      </div>
+      <div class="text-container-background">
+        <div class="text-container-mobile">
+          <h2 style="color: black; font-size: 24px; font-weight: 500">
+            VENU 2
+          </h2>
+        </div>
+        <div class="table-container-mobile">
+          <div class="responsive-table">
+            <div class="table-row">
+              <div class="table-cell">Dimensions</div>
+              <div class="table-cell second-column">45 x 45 x 12mm</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Weight</div>
+              <div class="table-cell second-column">49g</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Screen Resolution</div>
+              <div class="table-cell second-column">416 x 416 pixels</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Runtime</div>
+              <div class="table-cell second-column">11 days</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Memory/History</div>
+              <div class="table-cell second-column">8 GB</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">GPS</div>
+              <div class="table-cell second-column">Yes</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">
+                Built-in Speaker<br />
+                and Microphone
+              </div>
+              <div class="table-cell second-column">No</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Body Battery</div>
+              <div class="table-cell second-column">Yes</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Advanced Sleep Monitoring</div>
+              <div class="table-cell second-column">Yes</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Nap Detection</div>
+              <div class="table-cell second-column">No</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Mediation</div>
+              <div class="table-cell second-column">No</div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">Wheelchair Mode</div>
+              <div class="table-cell second-column">No</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="container-footer-fluid"
+      style="background-color: #032e3f; height: auto; padding: 20px 5%"
+    >
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 footer-item">
+          <h3 class="footer-h3-font">Contact</h3>
+          <p class="footer-p-font">
+            435 Orchard Rd, #02-04/05 Wisma Atria, Singapore 238877
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">+65 6709 4220</a>
+            <br />
+            <br />
+            <a href="#" style="color: #fcfaf2">service.sg@garmin.com</a>
+          </p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Quick Links</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item-footer">
+              <a class="nav-link-footer active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="purchase.html">Shop</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="our-stores.html">Stores</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item-footer">
+              <a class="nav-link-footer" href="service.html">Service Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2 footer-item">
+          <h3 class="footer-h3-font">Follow Us</h3>
+          <p style="padding-top: 20px; font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Facebook.svg" alt="facebook" />
+            <span style="padding-left: 0.89vw">Facebook</span>
+          </p>
+          <p style="font-size: 16px; color: #fcfaf2">
+            <img src="./svg/Instagram.svg" alt="instagram" />
+            <span style="padding-left: 0.89vw">Instagram</span>
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-5 footer-item">
+          <h3 class="footer-h3-font">Subscribe to our Newsletter</h3>
+          <p class="footer-p-font">
+            Enjoy exclusive discounts and first look on new promotions.
+          </p>
+          <div class="email-container">
+            <div class="input-subscribe-container">
+              <input type="text" placeholder="Email" />
+              <button class="email-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 footer-item">
+          <p
+            style="
+              font-family: Roboto;
+              font-size: 13px;
+              color: #fcfaf2;
+              text-align: center;
+            "
+          >
+            <br />
+            Copyright © 1996-2023 Garmin Ltd. or its subsidiaries
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
