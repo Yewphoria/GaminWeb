@@ -1,0 +1,14 @@
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Heart_Rate_Sensors" clip-path="url(#clip0_122_208)">
+<g id="Group">
+<path id="Vector" d="M61.6841 29.44C63.0921 26.368 63.8601 23.296 63.8601 20.352C63.8601 -0.768047 38.5161 -7.55205 32.5001 18.304C26.4841 -7.55205 1.14014 -0.896047 1.14014 20.352C1.14014 23.296 1.90814 26.368 3.31614 29.44" stroke="#FCFAF2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M1.14014 35.9679H17.5241L21.6201 30.2079L26.9961 38.7839L33.9081 24.5759L39.2841 44.5439L43.3801 35.9679H63.8601" stroke="#FCFAF2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M11.7642 42.624C20.8522 53.632 32.5002 62.464 32.5002 62.464C32.5002 62.464 44.1482 53.632 53.2362 42.496" stroke="#FCFAF2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_122_208">
+<rect width="64" height="64" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>
